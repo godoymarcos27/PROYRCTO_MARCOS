@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* barra de nav */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #eef5fe;
+   
+}
+/* pre css */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.nav_image {
+    display: flex;
+   min-width: 55px;
+   justify-content: center;
+}
+.nav_image img{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+}
+/* sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100% ;
+    width:270px ;
+    background-color: #fff;
+    padding:15px 10px ;
+    box-shadow: 0 0 2px rgb(0, 0,0, 0.1);
+    transition: all 0.4s ease;
+    /* z-index:40 */
+}
+.sidebar.close{
+    width: calc(55px + 22px);
+}
+.logo_item{
+    gap: 8px;
+}
+.logo_name{
+    font-size: 22px;
+    color: #333;
+    font-weight: 500px;
+}
+.sidebar.close .logo_name{ 
+    opacity: 0;
+    pointer-events: none;
+}
+#lock-icon,
+#sidebar-close {
+padding: 10px;
+color: rgb(110, 122, 232);
+font-size: 25px;
+cursor: pointer;
+margin-left: -4px;
+}
+#sidebar-close{
+    display: none;
+    color: #333;
+}
+.menu_container{
+    overflow: hidden; 
+    display: flex;
+      flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    overflow-y: auto;
+    height: calc(100% - 82px);
+    
+}
+.menu_title{
+    position: relative;
+    height: 50px;
+    width: 55px;
+    /* background: red; */
+
+  
+}
+
+.menu_title .title{
+ 
+   margin-left: 15px;
+   transition: all 0.3s ease;
+}
+
+.sidebar.close .title{
+opacity: 0;
+}
+.sidebar.close .block_bx{
+    opacity: 0;
+    }
+/* 
+
+  .menu_title .line{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px;
+      height: 3px;
+      width: 20px;
+      border-radius: 25px;
+      background: #aaa;
+      transition: all 0.3s ease;
+    
+    } */
+    
+    .item{
+        list-style: none;
+        /* background: red; */
+    }
+    .link{
+        color: #333;
+        
+       
+       text-decoration: none;
+        border-radius: 8px;
+        margin-bottom: 8px; 
+    } 
+
+    .link:hover{
+        
+        background-color: #d2d5f9;
+     }
+     .link span{
+        
+       white-space: nowrap;
+       /* background: rgb(102, 70, 147); */
+       
+     }
+     .sidebar.close #span{
+      opacity: 0;
+      }
+
+    .link i{
+        color:rgb(106, 144, 220) ;
+       height:40px ;
+       min-width: 55px;
+       display: flex;
+       font-size: 22px;
+       align-items: center;
+       justify-content: start;
+       border-radius: 4px;
+       margin-right: -15px;
+       /* display: none; */
+       /* background: rgb(87, 237, 28); */
+       
+   
+    }
+    i{
+      margin-left: -15px;
+    }
+    .card{
+   
+      width: 250px;
+      height:550px;
+
+    }
+    .container{
+      margin-left: 200px;
+padding: 150px;
+    
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top:-170px;
+      z-index:40
+
+    }
+    .nav-link{
+      margin-left: 1100px;
+     
+    }
+  
